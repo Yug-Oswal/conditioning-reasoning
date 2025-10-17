@@ -62,10 +62,11 @@ on a subset of the BBQ dataset (due to compute constraints).
 - **Increased accuracy**: final output accuracy improves on the BBQ dataset.  
 
 ### Toxicity Evals and Plots:
-![plots/base_model_vp.png]
-![plots/tuned_model_vp.png]
+![Base Model Toxicity Distribution](plots/base_model_vp.png)
+![Tuned Model Toxicity Distribution](plots/tuned_model_vp.png)
 
 ### Observations: 
+- The plots are of toxicity scores of sentence-level entities across different Chain of Thoughts.
 - Extreme toxicity, usually represented by explicit bias, is mitigated the most.
 - Other interpretations TBD.
 ---
