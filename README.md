@@ -61,6 +61,13 @@ on a subset of the BBQ dataset (due to compute constraints).
 - **Decreased reasoning bias**: reasoning chains evaluated using **LM-as-a-judge** or toxicity classifiers (e.g., `roberta-hate-speech-dynabench-r4`).  
 - **Increased accuracy**: final output accuracy improves on the BBQ dataset.  
 
+### Toxicity Evals and Plots:
+![plots/base_model_vp.png]
+![plots/tuned_model_vp.png]
+
+### Observations: 
+- Extreme toxicity, usually represented by explicit bias, is mitigated the most.
+- Other interpretations TBD.
 ---
 
 ## Repository Structure
