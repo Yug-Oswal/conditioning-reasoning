@@ -66,15 +66,21 @@ on a subset of the BBQ dataset (due to compute constraints).
 ![Tuned Model Toxicity Distribution](plots/tuned_model_vp.png)
 
 ### Observations: 
-- The plots are of toxicity scores of sentence-level entities across different Chain of Thoughts.
+- The plots are of toxicity scores (using roberta-hate-speech-dynabench-r4) of sentence-level entities across different Chain of Thoughts.
 - Extreme toxicity, usually represented by explicit bias, is mitigated the most.
 - Other interpretations TBD.
+
 ---
 
 ## Repository Structure
 
 ```plaintext
-│   ├── v1_lm_as_judge         # Try 1 for setting up lm-as-a-judge eval for automating bias eval
-│   ├── ci_lrm_bias1      # The first codefile - a lot of hypotheses testing and some model fine-tuning as per devised algo
-│   ├── ci_cr2     # v2 cleaner compiled version with only essential utilities required to implement final validated hypothesis
-│   └── v1_sset          # Try 1 at StereoSet eval of tuned model
+│   ├── plots 
+│   ├── v1
+│   │   ├── ci_cr2.ipynb   # compilation of promising hypotheses
+│   │   ├── ci_lrm_bias.ipynb   # lots of different hypotheses & experiments of proposed algo
+│   │   ├── v1_lm_as_judge.ipynb   # brief attempt at using qwen 1.5b as judge for bias
+│   │   ├── v1_sset.ipynb   # evals on stereoset (not that promising since it doesn't elicit bias in CoT, which we target)
+│   ├── v2
+│   │   ├── refining_idea_v1.ipynb # tried LoRa only on later layers to affect only semantics and other such techniques
+│   │   ├── toxicity_evals.ipynb # toxicity evals of base vs tuned model on BBQ
