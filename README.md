@@ -71,6 +71,13 @@ on a subset of the BBQ dataset (due to compute constraints).
 - Other interpretations TBD.
 
 ---
+## Next Steps:
+- Currently, I performed the identification of token spans by hand, which I plan to automate and scale.
+- Sentence-level toxicity will be evaluated post-each inference and in a case where there exists:
+  - High toxicity score for any reasoning steps (there exists biased reasoning steps).
+  - Toxicity score of output is below a certain threshold (that is, it is safe).
+- We will apply above described algorithm, thus creating a robust and scalable solution.
+- We will split the dataset demographically (eg. religion subset will be divided based on religion) and stratified sampling (some proportion of each religion will be sampled and model will be fine-tuned on) and then we evaluate on the rest.
 
 ## Repository Structure
 
