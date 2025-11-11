@@ -1,5 +1,6 @@
 # A Top-Down Approach: Statistical Intervention for Generalizable Alignment of Large Reasoning Models
-
+[Side branch] [Bias Monitor for Algorithm](https://github.com/Yug-Oswal/cknob-interpretability-vone) \
+[Side branch] [Causality Test via Activation Patching](https://github.com/Yug-Oswal/cr-actpatch)
 ## Motivation
 With **LRM CoT**, the internal reasoning of LMs has become more interpretable. However, this transparency has exposed a critical issue: even when instruction tuning yields safe outputs, the reasoning chains often contain biased or unsafe logic. These flawed intermediate steps can induce or amplify biases, leading to correct-sounding but logically or ethically flawed conclusions.  
 Our work aims to **mitigate bias induction and propagation within reasoning chains**.
